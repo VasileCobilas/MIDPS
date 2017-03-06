@@ -1,0 +1,1 @@
+În mersul lucrării am întîlnit dificultăți la crearea  unui fail ce va fi ignorat , precum și la  rezolvarea conflictelor.
