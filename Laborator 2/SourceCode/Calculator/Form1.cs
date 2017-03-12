@@ -12,22 +12,62 @@ namespace Calculator
 {
     public partial class MainBord : Form
     {
-        float number01;
-        float number02;
-        float plusButtonCounter = 0;
-        float minusButtonCounter = 0;
-        float multiplyButtonCounter = 0;
-        float divideButtonCounter = 0;
-        int clickCounter = 0;
+      
 
         public MainBord()
         {
             InitializeComponent();
-            
+            transparent();
 
 
         }
 
+        public void transparent()
+        {
+            plusButton.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
+            plusButton.FlatAppearance.BorderSize = 0;
+            equalButton.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
+            equalButton.FlatAppearance.BorderSize = 0;
+            multiplyButton.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
+            multiplyButton.FlatAppearance.BorderSize = 0;
+            minusButton.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
+            minusButton.FlatAppearance.BorderSize = 0;
+            divideButton.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
+            divideButton.FlatAppearance.BorderSize = 0;
+            zeroButton.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
+            zeroButton.FlatAppearance.BorderSize = 0;
+            oneButton.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
+            oneButton.FlatAppearance.BorderSize = 0;
+            twoButton.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
+            twoButton.FlatAppearance.BorderSize = 0;
+            threeButton.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
+            threeButton.FlatAppearance.BorderSize = 0;
+            fourButton.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
+            fourButton.FlatAppearance.BorderSize = 0;
+            fiveButton.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
+            fiveButton.FlatAppearance.BorderSize = 0;
+            sixButton.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
+            sixButton.FlatAppearance.BorderSize = 0;
+            sevenButton.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
+            sevenButton.FlatAppearance.BorderSize = 0;
+            eightButton.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
+            eightButton.FlatAppearance.BorderSize = 0;
+            nineButton.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
+            nineButton.FlatAppearance.BorderSize = 0;
+            pointButton.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
+            pointButton.FlatAppearance.BorderSize = 0;
+            plusMinusButton.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
+            plusMinusButton.FlatAppearance.BorderSize = 0;
+            clearButton.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
+            clearButton.FlatAppearance.BorderSize = 0;
+            clearenterButton.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
+            clearenterButton.FlatAppearance.BorderSize = 0;
+            radButton.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
+            radButton.FlatAppearance.BorderSize = 0;
+            
+            putButton.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
+            putButton.FlatAppearance.BorderSize = 0;
+        }
         private void plusButton_Click(object sender, EventArgs e)
         {
             
