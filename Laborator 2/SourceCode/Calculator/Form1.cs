@@ -12,7 +12,13 @@ namespace Calculator
 {
     public partial class MainBord : Form
     {
-      
+        float number01;
+        float number02;
+        float plusButtonCounter = 0;
+        float minusButtonCounter = 0;
+        float multiplyButtonCounter = 0;
+        float divideButtonCounter = 0;
+        int clickCounter = 0;
 
         public MainBord()
         {
@@ -70,77 +76,147 @@ namespace Calculator
         }
         private void plusButton_Click(object sender, EventArgs e)
         {
-            
+            number01 = float.Parse(numbersTextBox.Text);
+            numbersTextBox.Text = "";
+            plusButtonCounter++;
         }
+
 
         private void minusButton_Click(object sender, EventArgs e)
         {
-            
+            number01 = float.Parse(numbersTextBox.Text);
+            numbersTextBox.Text = "";
+            minusButtonCounter++;
         }
 
         private void multiplyButton_Click(object sender, EventArgs e)
         {
+            number01 = float.Parse(numbersTextBox.Text);
+            numbersTextBox.Text = "";
+            multiplyButtonCounter++;
         }
 
         private void divideButton_Click(object sender, EventArgs e)
         {
-            
+            number01 = float.Parse(numbersTextBox.Text);
+            numbersTextBox.Text = "";
+            divideButtonCounter++;
         }
 
         private void nineButton_Click(object sender, EventArgs e)
         {
-          
+            clickCounter++;
+            if (clickCounter == 1)
+            {
+                numbersTextBox.Text = "9";
+            }
+            else
+                numbersTextBox.Text += "9";
 
         }
 
         private void eightButton_Click(object sender, EventArgs e)
         {
-            
+            clickCounter++;
+            if (clickCounter == 1)
+            {
+                numbersTextBox.Text = "8";
+            }
+            else
+                numbersTextBox.Text += "8";
 
         }
         private void sevenButton_Click(object sender, EventArgs e)
         {
-            
+            clickCounter++;
+            if (clickCounter == 1)
+            {
+                numbersTextBox.Text = "7";
+            }
+            else
+                numbersTextBox.Text += "7";
 
         }
 
         private void sixButton_Click(object sender, EventArgs e)
         {
-           
+            clickCounter++;
+            if (clickCounter == 1)
+            {
+                numbersTextBox.Text = "6";
+            }
+            else
+                numbersTextBox.Text += "6";
         }
 
         private void fiveButton_Click(object sender, EventArgs e)
         {
-           
+            clickCounter++;
+            if (clickCounter == 1)
+            {
+                numbersTextBox.Text = "5";
+            }
+            else
+                numbersTextBox.Text += "5";
         }
 
         private void fourButton_Click(object sender, EventArgs e)
         {
-            
 
+            clickCounter++;
+            if (clickCounter == 1)
+            {
+                numbersTextBox.Text = "4";
+            }
+            else
+                numbersTextBox.Text += "4";
         }
 
         private void threeButton_Click(object sender, EventArgs e)
         {
-           
+            clickCounter++;
+            if (clickCounter == 1)
+            {
+                numbersTextBox.Text = "3";
+            }
+            else
+                numbersTextBox.Text += "3";
 
         }
 
         private void twoButton_Click(object sender, EventArgs e)
         {
-            
+            clickCounter++;
+            if (clickCounter == 1)
+            {
+                numbersTextBox.Text = "2";
+            }
+            else
+                numbersTextBox.Text += "2";
 
         }
 
         private void oneButton_Click(object sender, EventArgs e)
         {
-            
+            clickCounter++;
+            if (clickCounter == 1)
+            {
+                numbersTextBox.Text = "1";
+            }
+            else
+                numbersTextBox.Text += "1";
 
         }
 
         private void zeroButton_Click(object sender, EventArgs e)
         {
-          
+            clickCounter++;
+            if (clickCounter == 1)
+            {
+                numbersTextBox.Text = "0";
+            }
+            else
+                numbersTextBox.Text += "0";
 
         }
 
@@ -176,6 +252,38 @@ namespace Calculator
             
         }
 
-        
+        private void equalButton_Click(object sender, EventArgs e)
+        {
+            number02 = float.Parse(numbersTextBox.Text);
+            if (plusButtonCounter == 1)
+            {
+
+
+                numbersTextBox.Text = "" + (number01 + number02);
+                plusButtonCounter = 0;
+            }
+            else if (minusButtonCounter == 1)
+            {
+                numbersTextBox.Text = "" + (number01 - number02);
+                minusButtonCounter = 0;
+            }
+            else if (multiplyButtonCounter == 1)
+            {
+                numbersTextBox.Text = "" + (number01 * number02);
+                multiplyButtonCounter = 0;
+            }
+            else if (divideButtonCounter == 1)
+            {
+                if (number02 == 0)
+                {
+                    MessageBox.Show("Denominator can't be 0");
+                }
+                else
+                {
+                    numbersTextBox.Text = "" + (number01 / number02);
+                    divideButtonCounter = 0;
+                }
+            }
+        }
     }
 }

@@ -74,7 +74,7 @@
             this.equalButton.TabIndex = 1;
             this.equalButton.Text = "=";
             this.equalButton.UseVisualStyleBackColor = true;
-            
+            this.equalButton.Click += new System.EventHandler(this.equalButton_Click);
             // 
             // numbersTextBox
             // 
@@ -88,7 +88,6 @@
             this.numbersTextBox.Size = new System.Drawing.Size(238, 28);
             this.numbersTextBox.TabIndex = 2;
             this.numbersTextBox.Text = "0";
-            
             // 
             // panel1
             // 
