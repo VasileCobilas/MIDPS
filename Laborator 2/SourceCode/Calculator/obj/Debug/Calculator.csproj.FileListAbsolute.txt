@@ -1,0 +1,18 @@
+E:\Anul II\Calculator\Calculator\bin\Debug\Calculator.exe.config
+E:\Anul II\Calculator\Calculator\bin\Debug\Calculator.exe
+E:\Anul II\Calculator\Calculator\bin\Debug\Calculator.pdb
+E:\Anul II\Calculator\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
+E:\Anul II\Calculator\Calculator\obj\Debug\Calculator.MainBord.resources
+E:\Anul II\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+E:\Anul II\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.Cache
+E:\Anul II\Calculator\Calculator\obj\Debug\Calculator.exe
+E:\Anul II\Calculator\Calculator\obj\Debug\Calculator.pdb
+E:\Anul II\Semestru 2\MIDPS\Laborator 2\SourceCode\Calculator\bin\Debug\Calculator.exe.config
+E:\Anul II\Semestru 2\MIDPS\Laborator 2\SourceCode\Calculator\obj\Debug\Calculator.exe
+E:\Anul II\Semestru 2\MIDPS\Laborator 2\SourceCode\Calculator\obj\Debug\Calculator.pdb
+E:\Anul II\Semestru 2\MIDPS\Laborator 2\SourceCode\Calculator\bin\Debug\Calculator.exe
+E:\Anul II\Semestru 2\MIDPS\Laborator 2\SourceCode\Calculator\bin\Debug\Calculator.pdb
+E:\Anul II\Semestru 2\MIDPS\Laborator 2\SourceCode\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
+E:\Anul II\Semestru 2\MIDPS\Laborator 2\SourceCode\Calculator\obj\Debug\Calculator.MainBord.resources
+E:\Anul II\Semestru 2\MIDPS\Laborator 2\SourceCode\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+E:\Anul II\Semestru 2\MIDPS\Laborator 2\SourceCode\Calculator\obj\Debug\Calculator.csproj.GenerateResource.Cache
