@@ -238,7 +238,7 @@ namespace Calculator
             }
             else if (!string.IsNullOrEmpty(numbersTextBox.Text) && float.Parse(numbersTextBox.Text) != 0)
             {
-                numbersTextBox.Text = "-" + numbersTextBox.Text;
+                numbersTextBox.Text = "-" +  numbersTextBox.Text ;
             }
         }
        
@@ -297,6 +297,13 @@ namespace Calculator
                     divideButtonCounter = 0;
                 }
             }
+        }
+
+        private void numbersTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+                e.Handled = true;
+            base.OnKeyPress(e);
         }
     }
 }

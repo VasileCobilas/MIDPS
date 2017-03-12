@@ -5,3 +5,4 @@
 #Am setat butoanele { + -* / =} pentru efectuarea operatiilor simple;
 #Am setat butoanele {C ; CE ; , ; Rad ;X^2 ; +/- };
 #Am setat aplicatia pentru a putea efectua operatii cu numere zecimale;
+#Am inlaturat problema apritiei literelor in  efetuarea operatiilor ;

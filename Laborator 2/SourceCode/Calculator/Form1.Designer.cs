@@ -30,7 +30,6 @@
         {
             this.plusButton = new System.Windows.Forms.Button();
             this.equalButton = new System.Windows.Forms.Button();
-            this.numbersTextBox = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.putButton = new System.Windows.Forms.Button();
             this.radButton = new System.Windows.Forms.Button();
@@ -51,6 +50,7 @@
             this.divideButton = new System.Windows.Forms.Button();
             this.minusButton = new System.Windows.Forms.Button();
             this.multiplyButton = new System.Windows.Forms.Button();
+            this.numbersTextBox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,22 +76,9 @@
             this.equalButton.UseVisualStyleBackColor = true;
             this.equalButton.Click += new System.EventHandler(this.equalButton_Click);
             // 
-            // numbersTextBox
-            // 
-            this.numbersTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.numbersTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.numbersTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.numbersTextBox.ForeColor = System.Drawing.Color.DarkCyan;
-            this.numbersTextBox.Location = new System.Drawing.Point(-10, -1);
-            this.numbersTextBox.Name = "numbersTextBox";
-            this.numbersTextBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.numbersTextBox.Size = new System.Drawing.Size(238, 28);
-            this.numbersTextBox.TabIndex = 2;
-            this.numbersTextBox.Text = "0";
-            // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel1.Controls.Add(this.putButton);
             this.panel1.Controls.Add(this.radButton);
             this.panel1.Controls.Add(this.clearButton);
@@ -114,6 +101,7 @@
             this.panel1.Controls.Add(this.equalButton);
             this.panel1.Controls.Add(this.plusButton);
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel1.Location = new System.Drawing.Point(1, 23);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(227, 210);
@@ -345,19 +333,31 @@
             this.multiplyButton.UseVisualStyleBackColor = true;
             this.multiplyButton.Click += new System.EventHandler(this.multiplyButton_Click);
             // 
+            // numbersTextBox
+            // 
+            this.numbersTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.numbersTextBox.Location = new System.Drawing.Point(4, -3);
+            this.numbersTextBox.Name = "numbersTextBox";
+            this.numbersTextBox.Size = new System.Drawing.Size(223, 26);
+            this.numbersTextBox.TabIndex = 5;
+            this.numbersTextBox.Text = "0";
+            this.numbersTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numbersTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.numbersTextBox_KeyPress);
+            // 
             // MainBord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(228, 229);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(231, 231);
             this.Controls.Add(this.numbersTextBox);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainBord";
             this.ShowIcon = false;
             this.Text = "Calculator";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -365,7 +365,6 @@
 
         private System.Windows.Forms.Button plusButton;
         private System.Windows.Forms.Button equalButton;
-        private System.Windows.Forms.RichTextBox numbersTextBox;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button divideButton;
         private System.Windows.Forms.Button minusButton;
@@ -386,6 +385,7 @@
         private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.Button clearenterButton;
         private System.Windows.Forms.Button putButton;
+        private System.Windows.Forms.TextBox numbersTextBox;
     }
 }
 
