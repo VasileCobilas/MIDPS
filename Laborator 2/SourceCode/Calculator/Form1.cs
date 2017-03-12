@@ -222,34 +222,47 @@ namespace Calculator
 
         private void pointButton_Click(object sender, EventArgs e)
         {
-           
+            if (clickCounter == 1)
+            {
+                numbersTextBox.Text = ",";
+            }
+            else
+                numbersTextBox.Text += ",";
         }
 
         private void plusMinusButon_Click(object sender, EventArgs e)
         {
-            
+            if (numbersTextBox.Text.StartsWith("-"))
+            {
+                numbersTextBox.Text = numbersTextBox.Text.Substring(1);
+            }
+            else if (!string.IsNullOrEmpty(numbersTextBox.Text) && float.Parse(numbersTextBox.Text) != 0)
+            {
+                numbersTextBox.Text = "-" + numbersTextBox.Text;
+            }
         }
        
 
         private void clearButton_Click(object sender, EventArgs e)
         {
-            
-
+            numbersTextBox.Text = numbersTextBox.Text.Substring(0, numbersTextBox.Text.Length - 1);
         }
 
         private void clearenterButton_Click(object sender, EventArgs e)
         {
-         
+            numbersTextBox.Text = "";
         }
 
         private void radButton_Click(object sender, EventArgs e)
         {
-          
+            number01 = float.Parse(numbersTextBox.Text);
+            numbersTextBox.Text = "" + Math.Sqrt(number01);
         }
 
         private void putButton_Click(object sender, EventArgs e)
         {
-            
+            number01 = float.Parse(numbersTextBox.Text);
+            numbersTextBox.Text = "" + (number01 * number01);
         }
 
         private void equalButton_Click(object sender, EventArgs e)
