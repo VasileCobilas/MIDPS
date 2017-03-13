@@ -344,7 +344,7 @@
             this.numbersTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.numbersTextBox.Location = new System.Drawing.Point(2, 25);
             this.numbersTextBox.MaximumSize = new System.Drawing.Size(227, 38);
-            this.numbersTextBox.MaxLength = 10;
+            this.numbersTextBox.MaxLength = 9;
             this.numbersTextBox.MinimumSize = new System.Drawing.Size(227, 38);
             this.numbersTextBox.Name = "numbersTextBox";
             this.numbersTextBox.Size = new System.Drawing.Size(227, 38);
@@ -376,7 +376,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 

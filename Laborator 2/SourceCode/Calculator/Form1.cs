@@ -325,6 +325,8 @@ namespace Calculator
         {
             MessageBox.Show(" Calculator v1.0 \n Fondator Cobîlaș Vasile", "About");
         }
+
+        
     }
     }
 
