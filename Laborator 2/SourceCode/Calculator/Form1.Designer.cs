@@ -51,7 +51,12 @@
             this.minusButton = new System.Windows.Forms.Button();
             this.multiplyButton = new System.Windows.Forms.Button();
             this.numbersTextBox = new System.Windows.Forms.TextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // plusButton
@@ -102,7 +107,7 @@
             this.panel1.Controls.Add(this.plusButton);
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Location = new System.Drawing.Point(1, 23);
+            this.panel1.Location = new System.Drawing.Point(2, 59);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(227, 210);
             this.panel1.TabIndex = 4;
@@ -335,27 +340,69 @@
             // 
             // numbersTextBox
             // 
-            this.numbersTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.numbersTextBox.Location = new System.Drawing.Point(4, -3);
+            this.numbersTextBox.BackColor = System.Drawing.Color.Turquoise;
+            this.numbersTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.numbersTextBox.Location = new System.Drawing.Point(2, 25);
+            this.numbersTextBox.MaximumSize = new System.Drawing.Size(227, 38);
+            this.numbersTextBox.MaxLength = 10;
+            this.numbersTextBox.MinimumSize = new System.Drawing.Size(227, 38);
             this.numbersTextBox.Name = "numbersTextBox";
-            this.numbersTextBox.Size = new System.Drawing.Size(223, 26);
+            this.numbersTextBox.Size = new System.Drawing.Size(227, 38);
             this.numbersTextBox.TabIndex = 5;
             this.numbersTextBox.Text = "0";
             this.numbersTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numbersTextBox.TextChanged += new System.EventHandler(this.numbersTextBox_TextChanged);
             this.numbersTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.numbersTextBox_KeyPress);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem,
+            this.aboutToolStripMenuItem1});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(229, 24);
+            this.menuStrip1.TabIndex = 6;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exitToolStripMenuItem});
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.aboutToolStripMenuItem.Text = "File";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // aboutToolStripMenuItem1
+            // 
+            this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
+            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(52, 20);
+            this.aboutToolStripMenuItem1.Text = "About";
+            this.aboutToolStripMenuItem1.Click += new System.EventHandler(this.aboutToolStripMenuItem1_Click);
             // 
             // MainBord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(231, 231);
+            this.ClientSize = new System.Drawing.Size(229, 269);
             this.Controls.Add(this.numbersTextBox);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainBord";
             this.ShowIcon = false;
             this.Text = "Calculator";
             this.panel1.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -386,6 +433,10 @@
         private System.Windows.Forms.Button clearenterButton;
         private System.Windows.Forms.Button putButton;
         private System.Windows.Forms.TextBox numbersTextBox;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem1;
     }
 }
 

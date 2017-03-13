@@ -19,7 +19,8 @@ namespace Calculator
         float multiplyButtonCounter = 0;
         float divideButtonCounter = 0;
         int clickCounter = 0;
-
+       
+        
         public MainBord()
         {
             InitializeComponent();
@@ -70,7 +71,7 @@ namespace Calculator
             clearenterButton.FlatAppearance.BorderSize = 0;
             radButton.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
             radButton.FlatAppearance.BorderSize = 0;
-            
+
             putButton.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
             putButton.FlatAppearance.BorderSize = 0;
         }
@@ -222,12 +223,14 @@ namespace Calculator
 
         private void pointButton_Click(object sender, EventArgs e)
         {
-            if (clickCounter == 1)
+
+            if (numbersTextBox.Text.Contains(","))
             {
                 numbersTextBox.Text = ",";
             }
             else
                 numbersTextBox.Text += ",";
+
         }
 
         private void plusMinusButon_Click(object sender, EventArgs e)
@@ -238,10 +241,10 @@ namespace Calculator
             }
             else if (!string.IsNullOrEmpty(numbersTextBox.Text) && float.Parse(numbersTextBox.Text) != 0)
             {
-                numbersTextBox.Text = "-" +  numbersTextBox.Text ;
+                numbersTextBox.Text = "-" + numbersTextBox.Text;
             }
         }
-       
+
 
         private void clearButton_Click(object sender, EventArgs e)
         {
@@ -251,6 +254,7 @@ namespace Calculator
         private void clearenterButton_Click(object sender, EventArgs e)
         {
             numbersTextBox.Text = "";
+            
         }
 
         private void radButton_Click(object sender, EventArgs e)
@@ -269,9 +273,7 @@ namespace Calculator
         {
             number02 = float.Parse(numbersTextBox.Text);
             if (plusButtonCounter == 1)
-            {
-
-
+            { 
                 numbersTextBox.Text = "" + (number01 + number02);
                 plusButtonCounter = 0;
             }
@@ -293,11 +295,19 @@ namespace Calculator
                 }
                 else
                 {
+                    
                     numbersTextBox.Text = "" + (number01 / number02);
                     divideButtonCounter = 0;
                 }
             }
         }
+
+       
+
+        private void numberTextBox2_TextChanged(object sender, EventArgs e) { }
+
+        private void numbersTextBox_TextChanged(object sender, EventArgs e) { }
+
 
         private void numbersTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -305,5 +315,19 @@ namespace Calculator
                 e.Handled = true;
             base.OnKeyPress(e);
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+
+        private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(" Calculator v1.0 \n Fondator Cobîlaș Vasile", "About");
+        }
     }
-}
+    }
+
+
+
+            

@@ -6,3 +6,4 @@
 #Am setat butoanele {C ; CE ; , ; Rad ;X^2 ; +/- };
 #Am setat aplicatia pentru a putea efectua operatii cu numere zecimale;
 #Am inlaturat problema apritiei literelor in  efetuarea operatiilor ;
+#Am adaugat  in bara de meniuri  informatie despre verisiunea aplicatiei si fondatorul ei ;
