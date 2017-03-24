@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css?family=Amarante');
+body {
+	width: 100%;
+	min-height: 800px;
+	max-height: auto;
+	background: #444444;
+}
+#log {
+	width: 500px;
+	height: 20px;
+	float: right;
+	margin-right: 18px;
+	margin-top: 5px;
+}
+#wrapper {
+	width: 900px;
+	min-height: 1250px;
+	max-height: auto;
+	margin: 0 auto;
+	border: 1px solid #fff;
+}/*end of wrapper*/
+#head {
+	width: 862px;
+	height: 100px;
+	background: #470e56;
+	margin: 35px auto;
+	border-radius: 7px;
+	margin-bottom: 5px;
+}
+.butt {
+	width: 60px;
+	background: #00a4d3;
+	border: 1px solid #006ce5;
+	border-radius: 3px;
+	transition: 0.2s;
+	float: left;
+	margin-right: 20px;
+}
+.butt:hover {
+	background: #006ce5;
+	border: 1px solid #000;
+	float: left;
+	cursor: pointer;
+}
+form {
+	width: 400px;
+}
+.log[type="text"] {
+	width: 17px;
+	float: left;
+	margin-right: 10px;
+	transition: 0.2s
+}
+.pass[type="text"] {
+	width: 19px;
+	float: left;
+	margin-right: 10px;
+	transition: 0.2s;
+}
+.log[type="text"]:focus {
+	width: 100px;
+	float: left;
+	margin-right: 10px;
+	box-shadow: 0px 0px 7px 1px rgba(0, 0, 0,.5) inset;
+	background: blue;
+	color: white;
+}
+.pass[type="text"]:focus {
+	width: 100px;
+	float: left;
+	margin-right: 10px;
+	box-shadow: 0px 0px 7px 1px rgba(0, 0, 0,.5) inset;
+	background: blue;
+	color: white;
+}
+.remember {
+	display: block;
+	width: 140px;
+	float: left;
+	margin: 0px;
+	color: black;
+	transition: 0.2s;
+}
+.remember:hover {
+	color: red;
+}
+.rem {
+	width: 150px;
+	margin: 0px;
+}
+.inreg{
+	display: block;
+	width: 120px;
+	float: left;
+	margin: 0px;
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+	transition: 0.2s;
+}
+.inreg:hover {
+	color: red;
+}
+.nav {
+	width: 150px;
+	height: 80px;
+	list-style: none;
+	float: left;
+	margin-top: -5px;
+}
+.nav > li {
+	width: 120px;
+	height: 25px;
+	background: #000;
+	margin-left: -40px;
+	margin-top: 5px;
+	text-align: center;
+	line-height: 25px;
+	border-radius: 5px;
+	transition: 0.2s;
+}
+.nav > li > a {
+	color: blue;
+	text-decoration: none;
+	display: block;
+	border-radius: 5px;
+	transition: 0.2s;
+}
+.nav > li > a:hover {
+	background: blue;
+	color: black;
+	border-radius: 5px;
+}
+.nav > li:last-child {
+	margin-top: 5px;
+	background: transparent;
+	font-size: 20px;
+}
+.nav > li:last-child {
+	margin-top: 5px;
+	background: transparent;
+	font-size: 20px;
+}
+.logo {
+	font-size: 45px;
+	width: 350px;
+	height: 70px;
+	float: left;
+	margin: 0px;
+	line-height: 100px;
+	font-family: 'Amarante', cursive;
+	color: blue;
+	text-shadow: 1px 2px 5px rgba(0, 0, 0,.7);
+}
+.search {
+	width: 150px;
+	height: 25px;
+	background: black;
+	float: left;
+	margin: 50px 0 0 50px;
+	border: 1px solid silver;
+	border-radius: 10px; 
+}
+.search >img {
+	margin: -1px 0 0 -2px;
+}
+.search1 {
+	width: 110px;
+	height: 23px; 
+	position: absolute;
+	background: black;
+	border-radius: 10px;
+	border: none;
+	color: #fff;
+}
+#search1[type="text"]:focus {
+	text-decoration: none;
+	color: #fff;
+}/*end of head*/
+#content {
+	width: 862px;
+	height: 510px;
+	margin: 0 auto;
+}
+.leftcont {
+	width: 431px;
+	height: 540px;
+	float: left;
+}
+.news {
+	background: #004e63;
+	padding: 5px 0 5px 5px;
+	width: 400px;
+	border: 1.5px solid #006ce5;
+	border-radius: 5px;
+	margin: 0px;
+	text-align: center; 
+	font-size: 16px;
+}
+.text4 {
+	font: 13px;
+}
+.rightCont {
+	width: 349px;
+	height: 540px;
+	float: right;
+}
+.tit1 {
+	background: #004e63;
+	padding: 8px 0 5px 8px;
+	width: 342px;
+	border: 1.5px solid #006ce5;
+	border-radius: 5px;
+	margin: 0px;
+	font-size: 13px;
+	font-family: verdana;
+}
+table {
+	width: 349px;
+	height: 364px;
+}
+.fs {
+	background: #fff;
+}
+.fd {
+	background: #00a4d3;
+}
+.clas {
+	width: 320px;
+	height: 20px;
+	background: #7e2199;
+	border: 1px solid black;
+	border-radius: 5px;
+	transition: 0.2s;
+	margin-top: 5px;
+	font-size: 16px;
+	text-align: center;
+	transition: 0.2;
+	cursor: pointer;
+}
+.clas:hover {
+	background: blue;
+}
+video{
+	z-index: 3;
+}
+.links {
+	width: 415px;
+	height: 25px;
+	position: relative;
+}
+.links > li {
+	display: inline-block;
+	width: 103;
+	height: 25;
+	margin-right: 40px;
+}
+.links > li > a {
+	display: block;
+	font: 18px;
+	width: 103;
+	height: 25;
+	color: black;
+}
+.links > li > a:hover {
+	display: block;
+	font: 18px;
+	text-decoration: none;
+	width: 103;
+	height: 25;
+	color: black;
+}
+img {
+	margin-top: -80px;
+}
